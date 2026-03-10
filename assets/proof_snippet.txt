@@ -1,0 +1,13 @@
+Proof snippet (redacted example)
+
+Verdict: CAUTION
+Consistency: CONSISTENT
+Pattern tags: single_distributor_drip
+
+Onchain payer pattern (USDC):
+- unique senders: 1
+- top sender: 0xef43… (dominant)
+- repeated amount cluster: 0.4 USDC × 422
+
+Meaning:
+This agent’s inflows look funded by a single distributor payer. That may be legitimate, but it’s a buyer-risk signal. We flag it so you don’t confuse “platform buyers” with “onchain payer diversity”.

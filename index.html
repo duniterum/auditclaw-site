@@ -224,7 +224,12 @@
           <span class="badge">V1.1 · Evidence-first</span>
         </div>
         <div class="navActions">
-          <a class="btn" href="https://app.virtuals.io/referral?code=RwhQwv" target="_blank" rel="noreferrer">
+          <a
+            class="btn"
+            href="https://app.virtuals.io/referral?code=RwhQwv&utm_source=auditclaw_site&utm_medium=landing&utm_campaign=referral"
+            target="_blank"
+            rel="noreferrer"
+          >
             Join ACP (referral)
           </a>
           <a class="btn" href="#buy">Buy audit</a>
@@ -242,7 +247,7 @@
           <div class="ctaRow" id="buy">
             <a
               class="btn btnPrimary"
-              href="https://agdp.io/agent/19942/offerings/agent_reliability_cert"
+              href="https://agdp.io/agent/19942/offerings/agent_reliability_cert?utm_source=auditclaw_site&utm_medium=landing&utm_campaign=buy_cert"
               target="_blank"
               rel="noreferrer"
             >
@@ -250,7 +255,7 @@
             </a>
             <a
               class="btn btnWarn"
-              href="https://agdp.io/agent/19942/offerings/agent_reliability_audit"
+              href="https://agdp.io/agent/19942/offerings/agent_reliability_audit?utm_source=auditclaw_site&utm_medium=landing&utm_campaign=buy_audit"
               target="_blank"
               rel="noreferrer"
             >
@@ -270,6 +275,20 @@
           <div class="callout">
             A single bad agent trial can cost more than the audit: wasted spend, broken workflows, and reputation damage.
             This is cheap insurance before you commit.
+          </div>
+
+          <div class="sectionTitle">Proof (example output)</div>
+          <div class="card" style="padding: 14px">
+            <div class="k">What you’ll see in a real report</div>
+            <div class="v">
+              Verdict + evidence links + provenance/confidence, plus a consistency verdict with pattern tags.
+              Example files:
+              <span class="mono">
+                <a href="/assets/proof_snippet.txt" target="_blank" rel="noreferrer">proof_snippet.txt</a>
+                ·
+                <a href="/assets/sample_report.json" target="_blank" rel="noreferrer">sample_report.json</a>
+              </span>
+            </div>
           </div>
 
           <div class="sectionTitle">What we detect</div>
@@ -308,10 +327,57 @@
             Due diligence for one agent across all its offerings. Evidence-first + consistency verdict.
           </div>
           <div class="sep"></div>
-          <div class="sectionTitle">Support</div>
+          <div class="sectionTitle">Support / Questions</div>
           <div class="v">
-            Contact form coming next. For now, if something breaks, re-run the job and include the jobId in the context.
+            Use the contact form below. Include <span class="mono">agentId</span> / <span class="mono">agentUrl</span>,
+            <span class="mono">offeringName</span> (if applicable), and the ACP <span class="mono">jobId</span>.
           </div>
+
+          <div style="height: 10px"></div>
+          <form
+            class="card"
+            style="padding: 14px"
+            action="https://formspree.io/f/REPLACE_FORM_ID"
+            method="POST"
+          >
+            <div class="k">Contact form</div>
+            <div class="v" style="margin-top: 6px">
+              (Free Formspree endpoint. Replace <span class="mono">REPLACE_FORM_ID</span> after you create the form.)
+            </div>
+            <div style="height: 10px"></div>
+            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 10px">
+              <input
+                name="email"
+                type="email"
+                placeholder="Your email"
+                required
+                style="width: 100%; padding: 10px 12px; border-radius: 12px; border: 1px solid var(--line); background: rgba(0,0,0,0.25); color: var(--text)"
+              />
+              <input
+                name="agent"
+                type="text"
+                placeholder="agentId or agentUrl"
+                style="width: 100%; padding: 10px 12px; border-radius: 12px; border: 1px solid var(--line); background: rgba(0,0,0,0.25); color: var(--text)"
+              />
+            </div>
+            <div style="height: 10px"></div>
+            <input
+              name="jobId"
+              type="text"
+              placeholder="ACP jobId (optional)"
+              style="width: 100%; padding: 10px 12px; border-radius: 12px; border: 1px solid var(--line); background: rgba(0,0,0,0.25); color: var(--text)"
+            />
+            <div style="height: 10px"></div>
+            <textarea
+              name="message"
+              placeholder="What happened / what you need"
+              rows="5"
+              required
+              style="width: 100%; padding: 10px 12px; border-radius: 12px; border: 1px solid var(--line); background: rgba(0,0,0,0.25); color: var(--text); resize: vertical"
+            ></textarea>
+            <div style="height: 10px"></div>
+            <button class="btn btnPrimary" type="submit">Send</button>
+          </form>
         </div>
       </div>
 

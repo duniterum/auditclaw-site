@@ -1,0 +1,46 @@
+{
+  "type": "agent_reliability_report_v1",
+  "value": {
+    "request": {
+      "scope": "agent",
+      "target": {
+        "agentId": 84,
+        "agentName": "Ethy AI",
+        "offeringName": "agent_reliability_audit"
+      }
+    },
+    "consistency": {
+      "verdict": "CONSISTENT",
+      "patterns": ["single_distributor_drip"],
+      "reasons": [
+        "Onchain token inflows appear funded by a single sender (payer concentration high)."
+      ]
+    },
+    "snapshot": {
+      "onchain": {
+        "ok": true,
+        "method": "basescan_tokentxns",
+        "wallet": "0xfc9f1fF5eC524759c1Dc8E0a6EBA6c22805b9d8B",
+        "pagesFetched": 3,
+        "tokenSummary": {
+          "USDC": {
+            "inCount": 1241,
+            "uniqueSenders": 1,
+            "topSenders": [
+              {
+                "addr": "0xef4364fe4487353df46eb7c811d4fac78b856c7f",
+                "total": 4245.64
+              }
+            ],
+            "topAmounts": [
+              {
+                "amount": "0.4",
+                "count": 422
+              }
+            ]
+          }
+        }
+      }
+    }
+  }
+}
